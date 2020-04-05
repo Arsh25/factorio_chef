@@ -10,7 +10,7 @@ name 'factorio'
 default_source :supermarket
 
 # run_list: chef-client will run these recipes in the order specified.
-run_list 'factorio::default'
+run_list 'factorio::default', 'factorio::factorio_install'
 
 # Specify a custom source for a single cookbook:
 cookbook 'factorio', path: '.'
